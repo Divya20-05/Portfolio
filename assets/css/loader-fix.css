@@ -1,0 +1,16 @@
+/* LOADER ABSOLUTE POSITIONING - PREVENT SHAKING */
+@media screen and (min-width: 768px) {
+    #loader-target {
+        position: absolute !important;
+        display: flex !important;
+        right: 3% !important;
+        top: 120px !important;
+        width: 400px !important;
+        height: 400px !important;
+        justify-content: center !important;
+        align-items: center !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        z-index: 1 !important;
+    }
+}

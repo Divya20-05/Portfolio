@@ -1,0 +1,163 @@
+/* Liquid Loader Container */
+#liquid-loader-container {
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem;
+    /* space-x-4 */
+    padding: 2rem;
+    /* p-8 */
+    justify-content: center;
+    height: 100%;
+    min-height: 400px;
+}
+
+/* Individual Bar Wrapper */
+.liquid-bar-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Droplet */
+.droplet {
+    width: 1rem;
+    /* w-4 */
+    height: 1rem;
+    /* h-4 */
+    border-radius: 50%;
+    margin-bottom: 0.75rem;
+    /* mb-3 */
+    transition: all 0.5s cubic-bezier(0, 0, 0.2, 1);
+    /* ease-out */
+    filter: blur(0.5px);
+}
+
+/* Main Liquid Bar */
+.liquid-bar {
+    width: 2.5rem;
+    /* w-10 */
+    border-radius: 9999px;
+    /* rounded-full */
+    transition: all 0.2s cubic-bezier(0, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    /* transform-origin: bottom handled in JS */
+    filter: blur(0.3px);
+}
+
+/* Base Droplet */
+.base-droplet {
+    width: 0.75rem;
+    /* w-3 */
+    height: 0.75rem;
+    /* h-3 */
+    border-radius: 50%;
+    margin-top: 0.5rem;
+    /* mt-2 */
+    transition: all 0.3s ease;
+    filter: blur(0.2px);
+}
+
+/* Internal Effects */
+.liquid-surface {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1rem;
+    /* h-4 */
+    border-radius: 9999px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4), transparent);
+}
+
+.liquid-wave {
+    position: absolute;
+    inset: 0;
+    border-radius: 9999px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 50%, transparent 100%);
+}
+
+.liquid-shimmer {
+    position: absolute;
+    inset: 0;
+    width: 140%;
+    left: -20%;
+    border-radius: 9999px;
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.4), transparent);
+}
+
+.liquid-bubble {
+    position: absolute;
+    width: 0.5rem;
+    /* w-2 */
+    height: 0.5rem;
+    /* h-2 */
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+}
+
+/* Color Gradients Classes */
+.grad-0 {
+    background-image: linear-gradient(to right, #a855f7, #ec4899);
+}
+
+/* purple-pink */
+.grad-1 {
+    background-image: linear-gradient(to right, #3b82f6, #a855f7);
+}
+
+/* blue-purple */
+.grad-2 {
+    background-image: linear-gradient(to right, #22d3ee, #3b82f6);
+}
+
+/* cyan-blue */
+.grad-3 {
+    background-image: linear-gradient(to right, #4ade80, #22d3ee);
+}
+
+/* green-cyan */
+.grad-4 {
+    background-image: linear-gradient(to right, #facc15, #4ade80);
+}
+
+/* yellow-green */
+.grad-5 {
+    background-image: linear-gradient(to right, #fb923c, #facc15);
+}
+
+/* orange-yellow */
+.grad-6 {
+    background-image: linear-gradient(to right, #ef4444, #fb923c);
+}
+
+/* red-orange */
+
+.grad-bar-0 {
+    background-image: linear-gradient(to top, #a855f7, #ec4899);
+}
+
+.grad-bar-1 {
+    background-image: linear-gradient(to top, #3b82f6, #a855f7);
+}
+
+.grad-bar-2 {
+    background-image: linear-gradient(to top, #22d3ee, #3b82f6);
+}
+
+.grad-bar-3 {
+    background-image: linear-gradient(to top, #4ade80, #22d3ee);
+}
+
+.grad-bar-4 {
+    background-image: linear-gradient(to top, #facc15, #4ade80);
+}
+
+.grad-bar-5 {
+    background-image: linear-gradient(to top, #fb923c, #facc15);
+}
+
+.grad-bar-6 {
+    background-image: linear-gradient(to top, #ef4444, #fb923c);
+}
